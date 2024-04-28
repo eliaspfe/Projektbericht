@@ -1,0 +1,13 @@
+Problembeschreibung Elias Pfeiffer
+
+Ein Computer besteht aus vielen verschiedenen Komponenten, die er benötigt um funktionieren zu können. Damit ein Computer in aufwendingen Anwendungen wie z.B. Spielen noch eine gute Erfahrung bietet,
+müssen die Leistungstragenden Komponenten wie Grafikkarte und Prozessor möglichst viel Performance bereitstellen können.
+Mein Computer ist etwas in die Jahre gekommen, in Spielen und beim Arbeiten habe ich nicht mehr die Leistung erreicht, die ich mir vorgestellt habe. Dies hat allerdings auch damit zu tun,
+dass Spiele und Anwendungen immer mehr Leistung benötigen.
+Also wird es Zeit für ein Upgrade.
+Doch es gibt so viele verschiedene Porzessoren und vor allem Grafikkarten auf dem Markt. Welche Kombination aus CPU und GPU ist am besten und vor allem auch am günstigsten?
+Mein Ziel ist es also mit der Konfiguration eine hohe Preis Leistung zu erzielen.
+Dazu habe ich eine Tabelle erstellt, in welcher die Spalten "Verwendeter Prozessor", "Preis CPU in €", "Arbeitsspeicher in GB", "Preis RAM in €", "Verwendete Grafikkarte",
+"Preis GPU in €", "Hersteller GPU", "erzielte Gesamtleistung", "Gesamtpreis", "Leistung CPU" und "Leistung GPU", abgedeckt werden.
+Die Spalten "Leistung CPU", "Leistung GPU" und "erzielte Gesamtleistung" basieren auf fiktiven Zahlenbeispielen, die Ungefähr das Leistungsverhältnis der Komponenten wiederspiegelt.
+Die Spalte "erzielte Gesamtleistung" setzt sich zusammen aus 30% des Wertes der Spalte "Leistung CPU" und 70% des Wertes der Spalte "Leistung GPU".
