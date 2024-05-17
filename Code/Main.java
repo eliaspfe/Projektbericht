@@ -33,7 +33,7 @@ public class Main {
 
         // Hier können die Aggregated Rows Ausgegeben werden
         //for(AggregatedRow row : aggregatedRows){
-          //  System.out.println(row.grafikkarte + " " + row.gesamtPreis);
+          //  System.out.println("Modell: " + row.grafikkarte + ", Gesamtpreis: " + row.gesamtPreis + " €");
         //}
         ArrayList<AggregatedRow> sortedRows = Sorter.sort(aggregatedRows);
 
