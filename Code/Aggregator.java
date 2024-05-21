@@ -22,7 +22,7 @@ public class Aggregator {
     }
 
 
-    public void findGreatestPriceForEveryGPU(ArrayList<AggregatedRow> aggregatedRows, Row row){
+    private void findGreatestPriceForEveryGPU(ArrayList<AggregatedRow> aggregatedRows, Row row){
         for(AggregatedRow aggregatedRow : aggregatedRows){
             if(aggregatedRow.grafikkarte.equals(row.grafikkarte)){
                 if (row.gesamtPreis > aggregatedRow.gesamtPreis){
