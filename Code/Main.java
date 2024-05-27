@@ -7,6 +7,7 @@ public class Main {
         Aggregator aggregator = new Aggregator();
         ArrayList<Row> rows = new ArrayList<>();
         ArrayList<AggregatedRow> aggregatedRows = new ArrayList<>();
+        Sorter sorter = new Sorter();
 
         //Instanziierung der Objekte aus dem Datensatz
         rows.add(new Row("RTX 4090", 1950));
@@ -29,17 +30,20 @@ public class Main {
         rows.add(new Row("RTX 4060", 550));
         rows.add(new Row("RX 7900", 1350));
 
+        //aggregieren der Rows
         aggregatedRows = aggregator.aggregate(rows);
 
-
-        // Hier können die Aggregated Rows Ausgegeben werden
-        //for(AggregatedRow row : aggregatedRows){
+        
+        //Hier können die Aggregated Rows Ausgegeben werden
+        // for(AggregatedRow row : aggregatedRows){
         //    System.out.println("Modell: " + row.grafikkarte + ", Gesamtpreis: " + row.gesamtPreis + " €");
-        //}
-        ArrayList<AggregatedRow> sortedRows = Sorter.sort(aggregatedRows);
+        // }
+
+        //Hier wird sortiert :)
+        sorter.sort(aggregatedRows);
 
         //Hier kann die Sortierte Liste ausgegeben werden
-        for (AggregatedRow row : sortedRows) {
+        for (AggregatedRow row : aggregatedRows) {
             System.out.println("Modell: " + row.grafikkarte + ", Gesamtpreis: " + row.gesamtPreis + " €");
         }
 

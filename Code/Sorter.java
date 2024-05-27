@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class Sorter {
 
-    public static ArrayList<AggregatedRow> mergeSort(ArrayList<AggregatedRow> rows) {
+    private static ArrayList<AggregatedRow> mergeSort(ArrayList<AggregatedRow> rows) {
         int length = rows.size();
         if (length < 2) {
             return rows;
@@ -21,7 +21,7 @@ public class Sorter {
         return merge(leftSide, rightSide);
     }
 
-    public static ArrayList<AggregatedRow> merge(ArrayList<AggregatedRow> leftSide, ArrayList<AggregatedRow> rightSide) {
+    private static ArrayList<AggregatedRow> merge(ArrayList<AggregatedRow> leftSide, ArrayList<AggregatedRow> rightSide) {
         ArrayList<AggregatedRow> mergedArrayList = new ArrayList<>();
         int leftIndex = 0;
         int rightIndex = 0;
@@ -45,8 +45,10 @@ public class Sorter {
         return mergedArrayList;
     }
 
-    public static ArrayList<AggregatedRow> sort(ArrayList<AggregatedRow> rows) {
-        return mergeSort(rows);
+    public void sort(ArrayList<AggregatedRow> rows) {
+        ArrayList<AggregatedRow> sortedRows = mergeSort(rows);
+        rows.clear();
+        rows.addAll(sortedRows);
     }
 }
 
